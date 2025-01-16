@@ -18,7 +18,7 @@ const PrivateRoute = ({ element: Component }) => {
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/signin" element={<Register />} />
+      <Route path="/" element={<Register />} />
       <Route
         path="/invoice"
         element={<PrivateRoute element={InvoiceForm} />}

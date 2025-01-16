@@ -13,7 +13,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
 }
 
@@ -33,12 +33,17 @@ body{
         margin: -10px 0;
     }
 
-    .container p{
+    .container h6{
         font-size: 14.5px;
         margin: 15px 0;
     }
 
 form{ width: 100%; }
+
+.error-message {
+    font-size: 11px !important;
+    margin: 0 !important;
+  }
 
 .form-box{
     position: absolute;

@@ -1,0 +1,55 @@
+/* Container for the tooltip and button */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem; /* Adjust margin as needed */
+  }
+  
+  /* Button styling */
+  .button-container {
+    color: #6b7280; /* text-gray-500 */
+    cursor: pointer;
+    width: 2.5rem; /* 10 */
+    height: 2.5rem; /* 10 */
+    background-color: #f3f4f6; /* bg-gray-100 */
+    border-radius: 9999px; /* rounded-full */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container:hover {
+    background-color: #d1d5db; /* hover:bg-gray-300 */
+  }
+  
+  /* Tooltip styling */
+  .tooltip {
+    position: absolute;
+    top: 3rem; /* Adjust to position the tooltip below the button */
+    right: 0;
+    z-index: 40;
+    padding: 0.5rem; /* p-2 */
+    width: 8rem; /* 32 */
+    text-align: center;
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white;
+    font-size: 0.75rem; /* text-xs */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  /* Optional: Tooltip fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

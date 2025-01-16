@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Register from './components/Register';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
 
   return (
     <div>
-      <Register />
+      <AppRoutes />
     </div>
   )
 }
